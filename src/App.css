@@ -1,22 +1,112 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.header {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  flex-direction: column;
+  padding: 32px 0 24px;
+  position: relative;
+  top: 15px;
 }
 
-.App-link {
-  color: #09d3ac;
+.header img {
+  width: 45px;
+}
+
+.header img:hover {
+  cursor: pointer;
+}
+
+.header h1 {
+  font-family: sans-serif;
+  font-weight: 100;
+  font-size: 24px;
+  color: #333333;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: 1px solid #d8dee2;
+  border-radius: 5px;
+  background-color: #fff;
+  line-height: 1.5;
+  padding: 20px;
+  width: 266px;
+  height: 193px;
+  position: relative;
+  left: 190px;
+}
+
+.center p {
+  color: #24292e;
+  margin: 0 0 7px;
+  position: relative;
+  right: 55px;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.center p:nth-child(3) {
+  position: relative;
+  right: 110px;
+}
+
+.center a {
+  font-size: 14px;
+  position: relative;
+  left: 75px;
+  bottom: 28px;
+  text-decoration: none;
+}
+
+.center input {
+  background-color: #ffffff;
+  margin: 5px 0 15px;
+  padding: 6px 8px;
+  width: 100%;
+  border-radius: 5px;
+}
+
+.center input:nth-child(5) {
+  position: relative;
+  bottom: 20px;
+}
+
+.center .btn {
+  background-color: #28a745;
+  color: #fff;
+  border: 1px solid #28a745;
+  border-radius: 5px;
+  width: 286px;
+  height: 205px;
+  padding: 6px 12px;
+  position: relative;
+  bottom: 9px;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 15px 0 10px;
+  padding: 15px 20px;
+  border: 1px solid #d8dee2;
+  border-radius: 5px;
+  position: relative;
+  left: 190px;
+  width: 266px;
+  height: 21px;
+  font-size: 14px;
+}
+
+.footer a {
+  text-decoration: none;
+  position: relative;
+  left: 3px;
+}
+
+.footer a:hover {
+  text-decoration: underline;
 }

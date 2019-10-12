@@ -1,26 +1,43 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import "./App.css";
+
+class App extends React.Component {
+  constructor() {
+    super();
+
+    this.state = {
+      username: "",
+      password: ""
+    };
+  }
+
+  render() {
+    return (
+      <div className="App">
+        <div className="header">
+          <img src="github-icon.jpg"></img>
+          <h1>Sign in to GitHub</h1>
+        </div>
+
+        <div className="center">
+          <p>Username or email address</p>
+          <input></input>
+          <p>Password</p>
+          <a href="">Forgot password?</a>
+          <input></input>
+          <button className="btn" type="submit">
+            Sign in
+          </button>
+        </div>
+
+        <div className="footer">
+          <p>New to GitHub? </p>
+          <a href="">Create an account.</a>
+        </div>
+      </div>
+    );
+  }
 }
 
 export default App;
